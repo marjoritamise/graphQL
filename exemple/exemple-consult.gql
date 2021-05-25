@@ -1,0 +1,10 @@
+//Exemplo de consulta por nome de filme
+// {
+//   getMovieByName(name: "Matrix"){
+//     createdAt
+//     name
+//     genre
+//     country
+//     language
+//   }
+// }

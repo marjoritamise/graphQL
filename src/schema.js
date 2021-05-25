@@ -14,6 +14,7 @@ const typeDefs = gql`
 
     type Query {
         movies: [Movie]
+        getMovieByName(name: String):[Movie]
     }
 `;
 
