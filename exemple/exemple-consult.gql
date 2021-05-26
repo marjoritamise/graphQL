@@ -1,10 +1,17 @@
-//Exemplo de consulta por nome de filme
-// {
-//   getMovieByName(name: "Matrix"){
-//     createdAt
-//     name
-//     genre
-//     country
-//     language
-//   }
-// }
+Exemplo de consulta por nome de filme
+{
+  getMovieByName(name: "Matrix"){
+    createdAt
+    name
+    genre
+    country
+    language
+  }
+}
+
+Exemplo de Mutation
+mutation {
+  createUser(data: {name: "Teste"}) {
+    name
+  }
+}
