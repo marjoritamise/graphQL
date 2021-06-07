@@ -21,12 +21,13 @@
       "genre": "Action",
       "country": "EUA",
       "language": "English",
-      "actor": "1"
+      "actor": "1",
+      "money": 39.9
     }
   ],
   "awards": [
     {
-      "id_movie": "036a9e14-51da-4a92-af67-6bc4ec938495",
+      "idMovie": "036a9e14-51da-4a92-af67-6bc4ec938495",
       "oscar": 3
     }
   ]

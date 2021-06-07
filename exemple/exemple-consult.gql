@@ -15,3 +15,12 @@ mutation {
     name
   }
 }
+
+
+Exemplo de getOscar
+ {
+  getAwards(id: "036a9e14-51da-4a92-af67-6bc4ec938495") {
+    idMovie
+    oscar
+  }
+}

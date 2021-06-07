@@ -10,6 +10,7 @@ const typeDefs = gql`
         genre: String
         country: String
         language: String
+        money: Float
     }
 
     type User {
@@ -17,9 +18,15 @@ const typeDefs = gql`
         name: String
     }
 
+    type Awards{
+        idMovie: ID
+        oscar: Int
+    }
+
     type Query {
         movies: [Movie]
-        getMovieByName(name: String): [Movie]
+        getMovie(name: String, language: String, money: Float, id: ID): [Movie]
+        getAwards(id: ID): Awards
         users: [User]
         getUserByName(name: String): [User]
     }
@@ -31,6 +38,8 @@ const typeDefs = gql`
     type Mutation {
         createUser(data: userInput): User
     }
+
+    
 `;
 
 module.exports = typeDefs;

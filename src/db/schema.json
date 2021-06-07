@@ -13,7 +13,7 @@
     "actor": "string"
   },
   "awards": {
-    "id_movie": "string",
+    "idMovie": "string",
     "oscar": "int"
   }
 }
