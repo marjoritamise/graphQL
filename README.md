@@ -38,20 +38,17 @@ Há um banco de dados em JSON para facilitar o aprendizado com menos instalaçõ
 ![github-small](https://i.makeagif.com/media/6-23-2017/3kMCNc.gif)
 
 ### Desafio 1
-
 + Configure o arquivo server.js
 + Crie types/querys/resolvers para buscar dados de 1 usuário e de todos os usuários. 
 + Crie a mutation/resolvers para criar o usuário utilizando INPUT TYPE com todos os campos obrigatórios.
 + Crie um type/query/resolver para buscar os dados de 1 filme e de todos os filmes sem o campo user.
 
 ### Desafio 2
-
 + Transforme esse type em uma interface para pesquisar tipos diferentes de filmes. Um deve conter um valor de custo **money** e outro **language**. Essas informações devem ser ou uma ou outra para que possamos fazer a pesquisa por filmes que contenham money e outros que contenham language.
 + Apenas o filme cadastrado possui um numero de oscar. Para todos os outros, trate essa informação nos resolvers para que seja sempre nOscar: 0.
 + No resolver, trate essa separação (money/language) através dos resolvers.
 
 ### Desafio 3
-
 + Crie a mutation/resolver de criação de filme usando o ENUM para genero do filme e outro ENUM para o tipo que está sendo cadastrado (Money/Language) passando o campo user com apenas o nome.
 + Agora vamos adicionar um relacionamento entre user e movie. Adicione o user na busca dos filmes e através do resolver, trate o retorno do user. Todo filme deve retornar obrigatoriamente o seu usuário.
 
