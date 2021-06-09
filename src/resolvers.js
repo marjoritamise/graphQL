@@ -22,5 +22,6 @@ module.exports = {
     },
     Mutation: {
         createUser: async (_, { data }) => models.User.create(data),
+        createMovie: async (_, { data }) => models.Movie.create(data),
     },
 };

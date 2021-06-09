@@ -9,7 +9,7 @@ Exemplo de consulta por nome de filme
   }
 }
 
-Exemplo de Mutation
+Exemplo de Mutation User
 mutation {
   createUser(data: {name: "Teste"}) {
     name
@@ -18,9 +18,16 @@ mutation {
 
 
 Exemplo de getOscar
- {
+{
   getAwards(id: "036a9e14-51da-4a92-af67-6bc4ec938495") {
     idMovie
     oscar
+  }
+}
+
+Exemplo de Mutation Movie
+mutation {
+  createMovie(data: {name: "Madagascar", genre: COMMEDY, country: "EUA" language: PORTURGUESE, money: 19.9} ) {
+    name
   }
 }

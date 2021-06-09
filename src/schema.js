@@ -18,7 +18,7 @@ const typeDefs = gql`
         name: String
     }
 
-    type Awards{
+    type Awards {
         idMovie: ID
         oscar: Int
     }
@@ -31,15 +31,39 @@ const typeDefs = gql`
         getUserByName(name: String): [User]
     }
 
-    input userInput{
+    input userInput {
         name: String
+    }
+
+    enum Genre {
+        ACTION
+        COMMEDY
+        DRAMA
+        FANTASY
+        HORROR
+        MYSTERY
+        ROMANCE
+        THRILLER
+    }
+
+    enum Languege {
+        PORTURGUESE
+        ENGLISH
+        SPANISH
+    }
+
+    input movieInput {
+        name: String
+        genre: Genre
+        country: String
+        language: Languege
+        money: Float
     }
 
     type Mutation {
         createUser(data: userInput): User
+        createMovie(data: movieInput): Movie
     }
-
-    
 `;
 
 module.exports = typeDefs;
